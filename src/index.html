@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letrero de Extintor</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="sign-container">
+        <!-- Encabezado rojo -->
+        <div class="header">
+            <h1>EXTINTOR</h1>
+        </div>
+
+        <!-- Subtítulo -->
+        <div class="sub-header">
+            USELO UNICAMENTE EN FUEGO CLASE
+        </div>
+
+        <!-- Área de símbolos -->
+        <div class="symbols">
+            <!-- Triángulo Verde (Clase A) -->
+            <div class="triangle-a">
+                <span>A</span>
+            </div>
+
+            <!-- Símbolo Azul (Basurero en fuego) - TARGET DEL CLIC -->
+            <div class="blue-box" id="fire-symbol">
+                <!-- SVG simplificado simulando el bote y las llamas -->
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 25h70v10h-70zM25 40h50l-10 45h-30l-10-45z" fill="white" />
+                    <path d="M40 70c0 0 5-15 15-15 0 0 10 5 15 15" fill="none" stroke="white" stroke-width="5" />
+                    <path d="M45 70c0 0 5-20 10-20 0 0 5 10 5 20" fill="none" stroke="white" stroke-width="5" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Descripción de materiales -->
+        <div class="materials">
+            <strong>SOLIDOS COMBUSTIBLES</strong><br>
+            madera, papel,<br>
+            tela, basura<br>
+            cartones
+        </div>
+
+        <!-- Instrucciones de uso -->
+        <div class="method-header">
+            METODO PARA UTILIZARLO
+        </div>
+        <ol class="method-list">
+            <li>Sosténgalo en posición vertical.</li>
+            <li>Retire el seguro.</li>
+            <li>Oprima la palanca.</li>
+            <li>Dirija la descarga contra la base de la llama.</li>
+        </ol>
+
+        <!-- Borde inferior a rayas -->
+        <div class="stripes"></div>
+    </div>
+
+    <!-- Etiqueta de audio oculta -->
+    <audio id="alert-sound" src="AudioAlarma.mp3" preload="auto"></audio>
+</body>
+
+</html>
